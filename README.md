@@ -1,3 +1,38 @@
+## Flix Part 2
+
+### User Stories
+
+#### REQUIRED (10pts)
+
+- [x] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [x] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
+
+#### BONUS
+
+- [x] Implement a shared element transition when user clicks into the details of a movie (1 point).
+- [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
+  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
+- [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
+- [ ] Apply data binding for views to help remove boilerplate code. (1 point)
+- [x] Add a rounded corners for the images using the Glide transformations. (1 point)
+
+### App Walkthough GIF
+
+Here's a walkthrough of implemented user stories:
+
+<img src='flixster_demo_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+### Notes
+
+The shared element transition is used for the movie description. A challenge I faced was getting this transition to work from the recyclerview. Most documentation shows how to implement the transition from one activity to another, so getting the transition to work from the view took some additional research.
+
+## Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+
 # Unit 1 - *Flixster*
 
 **Flixster** is an android app that allows users to view the currently playing films.
