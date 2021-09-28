@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -17,6 +18,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -25,24 +27,25 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="8dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:textColor="@color/tea_green"
         android:fontFamily="sans-serif-black"
         android:shadowColor="@color/celadon_blue"
         android:shadowDx="0"
         android:shadowDy="7"
         android:shadowRadius="1"
+        android:textAlignment="center"
+        android:textColor="@color/crimson_ua"
+        android:textSize="30sp"
         tools:text="Test Movie Title: The Sequel" />
 
     <TextView
         android:id="@+id/tvOverview"
+        android:transitionName="overview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textColor="@color/platinum"
+        android:textColor="@color/black_coffee"
         tools:text="A test text blurb to test the layout of the movie description overview" />
 </RelativeLayout>

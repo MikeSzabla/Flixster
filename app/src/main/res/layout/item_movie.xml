@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -17,6 +18,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -37,6 +39,7 @@
 
     <TextView
         android:id="@+id/tvOverview"
+        android:transitionName="overview"
         android:layout_width="278dp"
         android:layout_height="82dp"
         android:layout_below="@+id/tvTitle"
@@ -46,6 +49,6 @@
         android:layout_marginStart="126dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="3dp"
-        android:textColor="@color/platinum"
+        android:textColor="@color/eerie_black"
         tools:text="A test text blurb to test the layout of the movie description overview" />
 </RelativeLayout>
